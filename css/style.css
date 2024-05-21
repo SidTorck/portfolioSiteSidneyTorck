@@ -1,0 +1,91 @@
+/*
+Colors used:
+Primary Color (Green): #26f522;
+Secondary Color (Turquoise): #23f596;
+Tertiary Color (Blue): #8dc8ae;
+Accent Color (Yellow): #f5da29;
+Primary Background Color (Black): #282828;
+Secondary Background Color (Dark-Blue): #253c3c;
+*/
+
+.montserrat-<uniquifier> {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+
+  body {
+    background-color: #282828;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #ffffff;
+  }
+
+  h1, h2, h3, h4 {
+    line-height: 1.4;
+  }
+  h1 {
+    font-size: 2.75em;
+    font-weight: 700;
+  }
+  
+  h2 {
+    font-size: 2.25em;
+    font-weight: 700;
+  }
+  
+  h3 {
+    font-size: 1.75em;
+    font-weight: 400;
+  }
+  h4 {
+    font-size: 1.35em;
+    font-weight: 400;
+  }
+
+  a {
+    color: #26f522;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #23f596;
+    text-decoration: underline;
+  }
+
+  a:visited {
+    color: #f5da29;
+  }
+  a:active {
+    color: #8dc8ae;
+  }
+
+  .button {
+    display: inline-block;
+    background-color: #23f596;
+    color: #282828;
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 0px;
+    border-bottom: 2px solid #8dc8ae;
+    transition: 0.2s opacity;
+  }
+
+  .button:hover {
+    opacity: 0.8;
+    text-decoration: none;
+  }
+
+  .button:visited {
+    color: #253c3c;
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    /*width: 80%;*/
+  }
