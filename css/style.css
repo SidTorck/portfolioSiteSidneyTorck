@@ -19,6 +19,11 @@ Secondary Background Color (Dark-Blue): #253c3c;
     box-sizing: border-box;
   }
 
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+
   body {
     background-color: #282828;
     font-family: 'Montserrat', sans-serif;
@@ -94,6 +99,7 @@ Secondary Background Color (Dark-Blue): #253c3c;
     border-radius: 0px;
     border-bottom: 2px solid #8dc8ae;
     transition: 0.2s opacity;
+    transition: 0.2s opacity;
   }
 
   .button:hover {
@@ -110,7 +116,37 @@ Secondary Background Color (Dark-Blue): #253c3c;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    max-width: 100%;
+    height: auto;
     /*width: 80%;*/
+  }
+
+  @keyframes color-change {
+    0% {fill: #edc655;}
+    50% {fill: #fcffad;}
+    100% {fill: #f76414;}
+  }
+
+  @keyframes cloud-move {
+    from {transform: translate(0,50px);}
+    to {transform: translate(200px,50px);}
+  }
+
+  @keyframes cloud-move-reverse {
+    from {transform: translate(446px,48px);}
+    to {transform: translate(100px, 48px);}
+  }
+
+  .sun {
+    animation: 4s color-change infinite alternate linear;
+  }
+
+  .cloud-front {
+    animation: 30s cloud-move infinite alternate linear;
+  }
+
+  .cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear;
   }
 
   #icons {
@@ -125,6 +161,12 @@ Secondary Background Color (Dark-Blue): #253c3c;
 
   .row {
     margin: 25px 0;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
   }
 
   #work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
@@ -162,6 +204,11 @@ Secondary Background Color (Dark-Blue): #253c3c;
     padding: 5px 0;
     display: inline-block;
     width: 100%;
+    text-align: center;
+  }
+
+  #hero span {
+    display: block;
   }
 
   p {
@@ -176,3 +223,104 @@ Secondary Background Color (Dark-Blue): #253c3c;
   #skills{
     margin-bottom: 20px;
   }
+
+
+  /* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    padding-top: 0;
+  }
+
+  .logo {
+    width: 100%;
+    float: left;
+    padding-top: 12px;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  .col-md-6 > h3 {
+    padding-top: 0;
+  }
+
+  .row {
+    margin-top: 0;
+  }
+
+  #about-page h3 { margin-top: 0;}
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  .col-lg-7 {
+    width: 58.33%;
+  }
+
+  .col-lg-5 {
+    width: 41.66%;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+/* ==============================
+Extra-large devices (1920px or larger)
+================================= */
+/*
+@media only screen and (min-width: 1920px) {
+
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+}*/
