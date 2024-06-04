@@ -10,18 +10,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/dbfeb277ff.js" crossorigin="anonymous"></script>
 </head>
 <body id="about-page">
     <header>
         <div class="container">
-            <img src="./img/logoSidneyTorck.svg" alt="Your Name" class="logo">
-            <nav id="navigation">
-                <ul>
-                    <li><a href="index.html">Work</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+            <div class="container">
+                <div class="navtoggle" id="myNavtoggle">
+                    <img src="./img/logoSidneyTorck.svg" alt="Your Name" class="logo">
+                    <nav id="navigation">
+                        <ul>
+                            <li><a href="index.html">Work</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+                            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -79,7 +85,7 @@
 
                     <!-- Skills & Tools -->
                     <div>
-                        <h2>Skills & Tools</h2>
+                        <h2>Skills and Tools</h2>
 
                         <div>
                             <!-- Skills -->
@@ -144,5 +150,10 @@
             </div>
         </div>
     </footer>
+
+    <!-- Java Script code -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+
 </body>
 </html>

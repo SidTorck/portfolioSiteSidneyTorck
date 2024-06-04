@@ -8,7 +8,7 @@ Primary Background Color (Black): #282828;
 Secondary Background Color (Dark-Blue): #253c3c;
 */
 
-.montserrat-<uniquifier> {
+.montserrat- <uniquifier> {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: <weight>;
@@ -35,7 +35,6 @@ Secondary Background Color (Dark-Blue): #253c3c;
 
   header {
     background-color: #282828;
-    text-align: center;
     padding: 10px 0;
     width: 100%;
     box-shadow: 0 11px 25px rgba(0, 0, 0, 0.5)  ; 
@@ -46,7 +45,7 @@ Secondary Background Color (Dark-Blue): #253c3c;
   }
 
   main {
-    padding-top: 133px;
+    padding-top: 48px;
   }
 
   h1, h2, h3, h4 {
@@ -176,20 +175,15 @@ Secondary Background Color (Dark-Blue): #253c3c;
   }
 
   .logo {
-    max-width: 250px;
-  }
-
-  nav {
-    display: inline-block;
+    max-width: 150px;
+    margin-left: 0%;
+    padding: 10px 0 4px;
   }
 
   nav > ul {
     list-style-type: none;
     padding: 0;
-  }
-
-  nav > ul > li {
-    display: inline-block;
+    margin: 0;
   }
 
   nav > ul > li > a {
@@ -224,6 +218,35 @@ Secondary Background Color (Dark-Blue): #253c3c;
     margin-bottom: 20px;
   }
 
+  .navtoggle li:not(:last-child) {
+    display: none;
+  }
+
+  .navtoggle, .navtoggle.responsive {
+    position: relative;
+  }
+
+  .navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    font-size: 20px;
+    padding-right: 0;
+  }
+
+  .navtoggle.responsive nav {
+    padding: 24px 0 0;
+  }
+
+  .navtoggle.responsive li  {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid #8dc8ae;
+  }
+
+  .navtoggle.responsive li:last-child  {
+    padding: 0 0 10px;
+  }
 
   /* ==============================
 Medium devices (640px and larger)
@@ -245,10 +268,15 @@ Medium devices (640px and larger)
     padding-top: 0;
   }
 
+  nav > ul {
+    margin: 1em 0;
+  }
+
   .logo {
     width: 100%;
     float: left;
     padding-top: 12px;
+    max-width: 200px;
   }
 
   .col-md-6 {
@@ -264,6 +292,27 @@ Medium devices (640px and larger)
   }
 
   #about-page h3 { margin-top: 0;}
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  .navtoggle.responsive nav {
+    padding: 0;
+  }
+
+  .navtoggle.responsive li  {
+    padding: 0;
+    border-top: none;
+  }
 }
 
 /* ==============================
@@ -300,6 +349,21 @@ X-large devices (1440px or larger)
     margin-right: auto;
   }
 
+  .logo {
+    max-width: 250px;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
 }
 
 /* ==============================
