@@ -249,6 +249,11 @@ Secondary Background Color (Dark-Blue): #253c3c;
     padding: 0 0 10px;
   }
 
+  .anim {
+    text-align: left;
+    width: 100%;
+  }
+
   /* ==============================
 Medium devices (640px and larger)
 ================================= */
