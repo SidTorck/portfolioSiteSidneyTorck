@@ -38,7 +38,7 @@ Secondary Background Color (Dark-Blue): #253c3c;
     padding: 10px 0;
     width: 100%;
     box-shadow: 0 11px 25px rgba(0, 0, 0, 0.5);
-    height: 60px;
+    height: auto;
     position: fixed;
   }
 
