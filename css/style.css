@@ -8,10 +8,10 @@ Primary Background Color (Black): #282828;
 Secondary Background Color (Dark-Blue): #253c3c;
 */
 
-.montserrat- <uniquifier> {
+.montserrat- <website-font> {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
+    font-weight: 300;
     font-style: normal;
   }
 
@@ -37,10 +37,8 @@ Secondary Background Color (Dark-Blue): #253c3c;
     background-color: #282828;
     padding: 10px 0;
     width: 100%;
-    box-shadow: 0 11px 25px rgba(0, 0, 0, 0.5)  ; 
-    -webkit-box-shadow: 0 11px 25px rgba(0, 0, 0, 0.5)  ; 
-    -moz-box-shadow: 0 11px 25px rgba(0, 0, 0, 0.5)  ;  
-    height: [object Object]px;
+    box-shadow: 0 11px 25px rgba(0, 0, 0, 0.5);
+    height: 60px;
     position: fixed;
   }
 
@@ -98,7 +96,6 @@ Secondary Background Color (Dark-Blue): #253c3c;
     border-radius: 0px;
     border-bottom: 2px solid #253c3c;
     transition: 0.2s opacity;
-    transition: 0.2s opacity;
   }
 
   .button:hover {
@@ -150,7 +147,18 @@ Secondary Background Color (Dark-Blue): #253c3c;
   }
 
   #icons {
+    text-align: center;
+  }
+
+  #icons > a {
     width: 32px;
+    margin: 0 12px 20px 12px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .email {
+    padding: 0 0 12px 15px;
   }
 
   /* Layout styling */
@@ -168,6 +176,8 @@ Secondary Background Color (Dark-Blue): #253c3c;
     clear: both;
     display: table;
   }
+
+  svg { width: 100%; }
 
   /* #work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; } */
 
@@ -261,7 +271,7 @@ Medium devices (640px and larger)
 
   header {
     text-align: unset;
-    padding: 20px 0 13px;
+    padding: 0 0 13px;
   }
 
   body {
@@ -281,7 +291,7 @@ Medium devices (640px and larger)
   .logo {
     width: 100%;
     float: left;
-    padding-top: 12px;
+    margin: 12px 0;
     max-width: 200px;
   }
 
@@ -335,7 +345,6 @@ X-large devices (1440px or larger)
 
   header {
     text-align: unset;
-    padding: 20px 0 13px;
   }
 
   body {
@@ -345,7 +354,6 @@ X-large devices (1440px or larger)
   nav {
     width: auto;
     float: right;
-    margin-top: 4px;
   }
 
   .col-lg-7 {
@@ -364,6 +372,7 @@ X-large devices (1440px or larger)
 
   .logo {
     max-width: 250px;
+    padding: 4px 0 0 0;
   }
 
   nav > ul > li {
@@ -389,12 +398,11 @@ X-large devices (1440px or larger)
 /* ==============================
 Extra-large devices (1920px or larger)
 ================================= */
-/*
+
 @media only screen and (min-width: 1920px) {
 
   header {
     text-align: unset;
-    padding: 20px 0 13px;
   }
 
   body {
@@ -404,7 +412,11 @@ Extra-large devices (1920px or larger)
   nav {
     width: auto;
     float: right;
-    margin-top: 4px;
   }
 
-}*/
+  .logo {
+    max-width: 250px;
+    padding: 4px 0 0 0;
+  }
+
+}
