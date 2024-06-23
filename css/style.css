@@ -78,12 +78,12 @@ h4 {
 }
 
 a {
-  color: #26f522;
+  color: #23f596;
   text-decoration: none;
 }
 
 a:hover {
-  color: #23f596;
+  color: #26f522;
   text-decoration: underline;
 }
 
@@ -176,10 +176,6 @@ img {
   vertical-align: middle;
 }
 
-.email {
-  padding: 0 0 12px 15px;
-}
-
 /* Layout styling */
 .container {
   padding: 0 15px;
@@ -218,7 +214,7 @@ nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #4a4a4a;
+  color: #23f596;
 }
 
 #hero {
