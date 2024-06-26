@@ -8,3 +8,8 @@ function menuToggle() {
         x.className = 'navtoggle';
       }
 }
+
+function myFunction() {
+  var element = document.body;
+  element.classList.toggle("bright-mode");
+}

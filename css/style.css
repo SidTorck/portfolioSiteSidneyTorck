@@ -282,6 +282,56 @@ p {
   padding: 0 0 20px;
 }
 
+.bright-mode {
+  background-color: #fff;
+  color: #000;
+}
+
+body.bright-mode header {
+  background-color: #f0f0f0;
+  color: #000;
+  box-shadow: 0 11px 25px rgba(180, 180, 180, 0.5);
+}
+
+body.bright-mode #hero {
+  background-color: #fff;
+  color: #000;
+}
+
+body.bright-mode .button {
+  background-color: #188755;
+  color: #fff;
+  border-bottom: 2px solid #32654E;
+}
+
+body.bright-mode .button:hover {
+  background-color: #175F16;
+}
+
+body.bright-mode nav > ul > li > a, body.bright-mode .email > p > a, body.bright-mode .phone {
+  color: #5F1AF4;
+}
+
+body.bright-mode nav > ul > li > a:hover, body.bright-mode .email > p > a:hover, body.bright-mode .phone:hover {
+  color: #175F16;
+}
+
+body.bright-mode nav > ul > li > a:visited, body.bright-mode .email > p > a:visited, body.bright-mode .phone:visited {
+  color: #188755;
+}
+
+body.bright-mode .logo {
+  color: #5F1AF4;
+}
+
+body.bright-mode .logo {
+  filter: invert(38%) sepia(97%) saturate(375%) hue-rotate(101deg) brightness(91%) contrast(89%);
+}
+
+body.bright-mode picture > img {
+  box-shadow: 0 11px 25px rgba(180, 180, 180, 0.5);
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
