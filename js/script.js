@@ -21,6 +21,13 @@ function brightmode() {
   localStorage.setItem('brightmode', !wasBrightmode);
   const element = document.body;
   element.classList.toggle('bright-mode', !wasBrightmode);
+
+  var x = document.getElementById("myDIV");
+  if (localStorage.getItem('brightmode') === 'true') {
+    x.innerHTML = "Toggle dark mode";
+  } else {
+    x.innerHTML = "Toggle bright mode";
+  }
 }
 
 function onload() {

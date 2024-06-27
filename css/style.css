@@ -89,6 +89,12 @@ h2 {
   margin: 10px 0;
 }
 
+#story > h2,
+.container > h2,
+.row > div > div > h2 {
+  padding: 0;
+}
+
 h3 {
   font-size: 1.75em;
   font-weight: 400;
@@ -263,7 +269,11 @@ p {
 }
 
 #skills {
-  margin-bottom: 20px;
+  padding: 20px 0;
+}
+
+#tools {
+  padding: 20px 0;
 }
 
 .navtoggle li:not(:last-child) {
@@ -448,11 +458,6 @@ X-large devices (1440px or larger)
 
   h2 {
     padding-left: 40px;
-  }
-
-  #story > h2,
-  .container > h2 {
-    padding: 0;
   }
 
   body {
