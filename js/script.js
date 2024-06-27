@@ -9,7 +9,20 @@ function menuToggle() {
       }
 }
 
+/*
 function myFunction() {
   var element = document.body;
   element.classList.toggle("bright-mode");
+}
+  */
+
+function brightmode() {
+  const wasBrightmode = localStorage.getItem('brightmode') === 'true';
+  localStorage.setItem('brightmode', !wasBrightmode);
+  const element = document.body;
+  element.classList.toggle('bright-mode', !wasBrightmode);
+}
+
+function onload() {
+  document.body.classList.toggle('bright-mode', localStorage.getItem('brightmode') === 'true');
 }

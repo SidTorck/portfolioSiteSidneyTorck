@@ -25,16 +25,40 @@ Secondary Background Color (Dark-Blue): #253c3c;
 }
 
 body {
-  background-color: #282828;
+  background-color: var(--background-color);
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.6;
-  color: #fff;
+  color: var(--color);
+}
+
+body:not(.bright-mode) {
+  --background-color: #282828;
+  --color: #fff;
+  --button-background-color: #23f596;
+  --button-color: #282828;
+  --button-color-visited: #253c3c;
+  --link-color: #23f596;
+  --link-color-hover: #26f522;
+  --link-color-visited: #f5da29;
+  --link-color-active: #8dc8ae;
+}
+
+.bright-mode {
+  --background-color: #fff;
+  --color: #000;
+  --button-background-color: #32654e;
+  --button-color: #fff;
+  --button-color-visited: #f0f0f0;
+  --link-color: #5f1af4;
+  --link-color-hover: #175f16;
+  --link-color-visited: #188755;
+  --link-color-active: #8dc8ae;
 }
 
 header {
-  background-color: #282828;
+  background-color: var(--background-color);
   padding: 10px 0;
   width: 100%;
   box-shadow: 0 11px 25px rgba(0, 0, 0, 0.5);
@@ -78,27 +102,27 @@ h4 {
 }
 
 a {
-  color: #23f596;
+  color: var(--link-color);
   text-decoration: none;
 }
 
 a:hover {
-  color: #26f522;
+  color: var(--link-color-hover);
   text-decoration: underline;
 }
 
 a:visited {
-  color: #f5da29;
+  color: var(--link-color-visited);
 }
 
 a:active {
-  color: #8dc8ae;
+  color: var(--link-color-active);
 }
 
 .button {
   display: inline-block;
-  background-color: #23f596;
-  color: #282828;
+  background-color: var(--button-background-color);
+  color: var(--button-color);
   font-weight: 400;
   padding: 10px;
   border-radius: 0;
@@ -112,7 +136,7 @@ a:active {
 }
 
 .button:visited {
-  color: #253c3c;
+  color: var(--button-color-visited);
 }
 
 img {
@@ -214,11 +238,11 @@ nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #23f596;
+  color: var(--link-color);
 }
 
 #hero {
-  background-color: #282828;
+  background-color: var(--background-color);
   padding: 5px 0;
   display: inline-block;
   width: 100%;
@@ -282,11 +306,7 @@ p {
   padding: 0 0 20px;
 }
 
-.bright-mode {
-  background-color: #fff;
-  color: #000;
-}
-
+/*
 body.bright-mode header {
   background-color: #f0f0f0;
   color: #000;
@@ -320,9 +340,7 @@ body.bright-mode nav > ul > li > a:visited, body.bright-mode .email > p > a:visi
   color: #188755;
 }
 
-body.bright-mode .logo {
-  color: #5F1AF4;
-}
+*/
 
 body.bright-mode .logo {
   filter: invert(38%) sepia(97%) saturate(375%) hue-rotate(101deg) brightness(91%) contrast(89%);
@@ -432,8 +450,13 @@ X-large devices (1440px or larger)
     padding-left: 40px;
   }
 
+  #story > h2,
+  .container > h2 {
+    padding: 0;
+  }
+
   body {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   nav {
@@ -493,7 +516,7 @@ Extra-large devices (1920px or larger)
   }
 
   body {
-    font-size: 18px;
+    font-size: 24px;
   }
 
   nav {
