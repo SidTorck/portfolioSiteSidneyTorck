@@ -117,10 +117,6 @@ a:hover {
   text-decoration: underline;
 }
 
-a:visited {
-  color: var(--link-color-visited);
-}
-
 a:active {
   color: var(--link-color-active);
 }
@@ -192,7 +188,7 @@ img {
   margin-bottom: 20px;
   display: block;
   text-align: center;
-  width: 50%;
+  width: 60%;
 }
 
 #icons {
@@ -212,7 +208,7 @@ img {
 }
 
 .row {
-  margin: 50px 0;
+  margin: 30px 0;
 }
 
 .row::after {
@@ -316,48 +312,46 @@ p {
   padding: 0 0 20px;
 }
 
-/*
-body.bright-mode header {
-  background-color: #f0f0f0;
-  color: #000;
-  box-shadow: 0 11px 25px rgba(180, 180, 180, 0.5);
-}
-
-body.bright-mode #hero {
-  background-color: #fff;
-  color: #000;
-}
-
-body.bright-mode .button {
-  background-color: #188755;
-  color: #fff;
-  border-bottom: 2px solid #32654E;
-}
-
-body.bright-mode .button:hover {
-  background-color: #175F16;
-}
-
-body.bright-mode nav > ul > li > a, body.bright-mode .email > p > a, body.bright-mode .phone {
-  color: #5F1AF4;
-}
-
-body.bright-mode nav > ul > li > a:hover, body.bright-mode .email > p > a:hover, body.bright-mode .phone:hover {
-  color: #175F16;
-}
-
-body.bright-mode nav > ul > li > a:visited, body.bright-mode .email > p > a:visited, body.bright-mode .phone:visited {
-  color: #188755;
-}
-
-*/
-
 body.bright-mode .logo {
   filter: invert(38%) sepia(97%) saturate(375%) hue-rotate(101deg) brightness(91%) contrast(89%);
 }
 
 body.bright-mode picture > img {
   box-shadow: 0 11px 25px rgba(180, 180, 180, 0.5);
+}
+
+.column {
+  display: inline-block;
+  margin: auto;
+  width: 49%;
+}
+
+.arrow {
+  width: 32px;
+  filter: invert(92%) sepia(75%) saturate(761%) hue-rotate(72deg) brightness(95%) contrast(103%);
+}
+
+.arrow:hover {
+  filter: invert(69%) sepia(62%) saturate(2848%) hue-rotate(71deg) brightness(110%) contrast(99%);
+}
+
+body.bright-mode .arrow {
+  filter: invert(21%) sepia(100%) saturate(6442%) hue-rotate(260deg) brightness(92%) contrast(109%);
+}
+
+body.bright-mode .arrow:hover {
+  filter: invert(24%) sepia(60%) saturate(991%) hue-rotate(79deg) brightness(93%) contrast(89%);
+}
+
+#artstation-title {
+  text-align: center;
+}
+
+#artstation {
+  display: block;
+  width: 10%;
+  margin: auto;
+  margin-bottom: 50px;
 }
 
 /* ==============================
@@ -440,7 +434,11 @@ Medium devices (640px and larger)
   }
 
   #cv {
-    width: 35%;
+    width: 40%;
+  }
+
+  .arrow {
+    margin-top: 25px;
   }
 }
 
@@ -507,7 +505,7 @@ X-large devices (1440px or larger)
   }
 
   #cv {
-    width: 25%;
+    width: 30%;
   }
 }
 
