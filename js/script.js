@@ -9,13 +9,6 @@ function menuToggle() {
       }
 }
 
-/*
-function myFunction() {
-  var element = document.body;
-  element.classList.toggle("bright-mode");
-}
-  */
-
 function brightmode() {
   const wasBrightmode = localStorage.getItem('brightmode') === 'true';
   localStorage.setItem('brightmode', !wasBrightmode);
