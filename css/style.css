@@ -326,6 +326,12 @@ body.bright-mode picture > img {
   width: 100%;
 }
 
+.arrowColumn {
+  display: inline-block;
+  margin: auto;
+  width: 49%;
+}
+
 .arrow {
   width: 32px;
   filter: invert(92%) sepia(75%) saturate(761%) hue-rotate(72deg) brightness(95%) contrast(103%);
