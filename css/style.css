@@ -360,6 +360,20 @@ body.bright-mode .arrow:hover {
   margin-bottom: 50px;
 }
 
+.videos {
+  padding: 25px 0;
+}
+
+.videos > div > iframe{
+  width: 100%;
+  padding: 0 10px;
+}
+
+.anim-space{
+  text-align: center;
+  margin-top: 25px;
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -445,6 +459,16 @@ Medium devices (640px and larger)
 
   .arrow {
     margin-top: 25px;
+  }
+
+  .videos {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+
+  .videos > div > iframe{
+    width: 100%;
+    padding: 0 10px;
   }
 }
 
