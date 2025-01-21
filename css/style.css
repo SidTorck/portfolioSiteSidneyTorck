@@ -484,12 +484,24 @@ Medium devices (640px and larger)
 
   .videos {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px; /* Add some spacing between the videos */
   }
-
-  .videos > div > iframe{
-    width: 100%;
-    padding: 0 10px;
+  
+  .videos > div {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      border-radius: 12px; /* Rounded corners */
+      overflow: hidden; /* Ensures child elements are clipped to the parent's shape */
+  }
+  
+  .videos > div > iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; /* Stretch to fill parent */
+      border: 0; /* Remove border */
   }
 }
 
