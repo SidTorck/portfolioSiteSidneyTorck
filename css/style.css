@@ -374,6 +374,14 @@ body.bright-mode .arrow:hover {
   margin-top: 25px;
 }
 
+picture > img {
+  border-radius: 12px;
+}
+
+iframe {
+  border-radius: 12px;
+}
+
 /* ==============================
 Special (782px and larger)
 ================================= */
